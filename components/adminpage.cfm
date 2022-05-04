@@ -22,8 +22,9 @@
                   <p>Data saved successfully</p>
                   </cfif>         
                   <hr>
-                  <cfinvoke component="task1" method="fetch_data" returnVariable="pageList">    
-                  </cfinvoke>               
+                   <cfset data=createObject("component","task2")>
+                   <cfset PageList=data.fetchdata()>   
+                                         
                   <div class="col-md-6 col-md-offset-4">
                       <h5>ALL Page List </h5>
                       <table border="1">
