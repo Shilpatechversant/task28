@@ -4,4 +4,4 @@
    page_desc='#form.page_desc#'
    WHERE ID=#URL.ID#
 </CFQUERY>
-<cflocation url="../index.cfm">
+<cflocation url="../components/adminpage.cfm">

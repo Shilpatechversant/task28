@@ -8,11 +8,17 @@ input[type=number] select {
     border-radius: 4px;
     box-sizing: border-box;
   }
-  
-  
+  body{
+    background-color:#d7bdbf;
+  } 
   
   input[type=submit]:hover {
     background-color: #45a049;
+  }
+  .container{
+    background-color:#0e8179;
+     width:500px;
+     margin-top:60px;
   }
 
   .alert {
