@@ -15,7 +15,11 @@ input[type=number] select {
   body{
     background-color:#d7bdbf;
   } 
-  
+  .pagedetails
+  {
+    margin-top:10px;
+    background-color:pink;
+  }
   input[type=submit]:hover {
     background-color: #45a049;
   }

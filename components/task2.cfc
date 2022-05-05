@@ -12,4 +12,10 @@
         </CFQUERY>         
         <cfreturn editform>     
     </cffunction> 
+      <cffunction name="rdata" access="remote">   
+        <cfquery datasource="newtech" name="result"> 
+              select * from sakila.cms_pages WHERE id=<CFQUERYPARAM VALUE="#URL.ID#"> 
+        </cfquery>    
+        <cfreturn result>     
+    </cffunction> 
 </cfcomponent>
