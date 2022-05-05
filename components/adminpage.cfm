@@ -19,12 +19,11 @@
                       </div>
                   </cfoutput>  
                   <cfif structKeyExists(url, "success")>  
-                  <p>Data saved successfully</p>
+                    <p>Data saved successfully</p>
                   </cfif>         
                   <hr>
                    <cfset data=createObject("component","task2")>
-                   <cfset PageList=data.fetchdata()>   
-                                         
+                   <cfset PageList=data.fetchdata()>                                         
                   <div class="col-md-6 col-md-offset-4">
                       <h5>ALL Page List </h5>
                       <table border="1">
@@ -41,8 +40,8 @@
                                   <td> #page_desc# </td>
                                   <td>
                                       <a href="deletepage.cfm?id=#id#">Delete <a />
-                                          <br />
-                                          <a href="editpage.cfm?id=#id#">edit <a />
+                                          <br/>
+                                      <a href="editpage.cfm?id=#id#">edit <a />
                                   </td>
                               </tr>
                           </cfoutput>
