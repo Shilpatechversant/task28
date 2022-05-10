@@ -37,7 +37,8 @@
     <cffunction name="getdata" access="remote">      
         <cfquery datasource="newtech"> 
          INSERT INTO sakila.cms_pages (page_name, page_desc) VALUES
-         (<cfqueryparam value="#form.head#" cfsqltype="cf_sql_longvarchar">,<cfqueryparam value="#form.des#" cfsqltype="cf_sql_longvarchar">) 
+         (<cfqueryparam value="#form.head#" cfsqltype="cf_sql_longvarchar">,
+         <cfqueryparam value="#form.des#" cfsqltype="cf_sql_longvarchar">) 
          </cfquery>
         <cflocation url="adminpage.cfm?sucess=1">
     </cffunction>
