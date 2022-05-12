@@ -1,5 +1,3 @@
-<cfapplication name="login" sessionTimeout="#CreateTimeSpan(0, 0, 60, 60)#"
-sessionManagement="yes">
 
  <cfif StructKeyExists(Session, "mystruct")>
 

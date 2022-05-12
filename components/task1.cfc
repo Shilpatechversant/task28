@@ -1,10 +1,11 @@
 <cfcomponent>
     <cfapplication name="login" sessionTimeout="#CreateTimeSpan(0, 0, 60, 60)#" sessionManagement="yes">
-
-    <cffunction name="insertdetails" access="remote">
+    <cffunction name="insertdetails" access="remote" output="true">
         <cfargument name="username" type="string" required="true">
         <cfargument name="password" type="string" required="true">
-        <cfquery datasource="newtech" name="result" result="outputdata"> SELECT * FROM sakila.cms_table WHERE username = "#arguments.username#" AND pwd="#arguments.password#" </cfquery>
+        <cfquery datasource="newtech" name="result" result="outputdata"> 
+             SELECT * FROM sakila.cms_table WHERE username = "#arguments.username#" AND pwd="#arguments.password#" 
+        </cfquery>
             <cfif outputdata.RECORDCOUNT GT 0>
                 <cfloop query="result">
                     <cfset user_role=#role#>

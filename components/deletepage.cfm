@@ -2,6 +2,6 @@
    DELETE  FROM sakila.cms_pages
    WHERE id = <cfqueryparam CFSQLType="CF_SQL_INTEGER" value="#Id#">
 </CFQUERY>
-<cflocation url="../index.cfm">
+<cflocation url="adminpage.cfm?sucess=1">
 
 

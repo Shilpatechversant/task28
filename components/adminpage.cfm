@@ -1,4 +1,3 @@
-    <cfapplication name="login" sessionTimeout="#CreateTimeSpan(0, 0, 60, 60)#"sessionManagement="yes">        
       <cfif StructKeyExists(Session.mystruct,"loggedin")>
           <cfif Session.mystruct.role eq "admin" OR Session.mystruct.role eq "editor">
               <cfinclude template="header.cfm">
